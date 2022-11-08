@@ -1,0 +1,64 @@
+<%- include('../templates/header.ejs');%>
+<%- include('../templates/navbar.ejs');%>
+
+<div class="container">
+    <p class="title">Contactenos</p>
+    <section>
+        <article class="info-contact">
+            <p>Escribenos tu inquietud y te responderemos lo más
+                pronto posible. O si prefieres puedes reservar una
+                visita técnica.
+                Gracias por confiar en nosotros.
+            </p>
+            <div><img src="../../public/img/contactanos-wave.svg"></div>
+        </article>
+
+        <div class="form-container">
+            <p class="title-talk">Habla con nosotros</p>
+            <form action="" method="post">
+                
+                <p>
+                    <label class="label-name">* Nombre</label><br>
+                    <input class="nombre" type="text" placeholder="ej. Alex">
+                </p>
+                <p>
+                    <label class="label-apellido">* Apellido</label><br>
+                    <input class="apellido" type="text" placeholder="ej. Cangui">
+                </p>
+
+                <p>
+                    <label class="label-email">* Correo electronico</label><br>
+                    <input class="email" type="email" placeholder="ej. alex@gmail.com">
+                </p>
+
+                <p>
+                    <label class="label-dudas">* Cuentanos tus dudas</label><br>
+                    <textarea class="textarea">
+                    </textarea>   
+                </p>
+                
+                <p>
+                    <button class="btn-enviar" type="button">Enviar mensaje</button>
+                </p>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="location-container">
+        <div class="location-info">
+            <h2>¿Donde nos ubicamos?</h2>
+            <p>Puedes encontranos en:</p>
+            <p>C.Quito y Calixto Pino, frente a UE Victoria Vazconez Cuvi</p>
+            <p>LATACUNGA - ECUADOR</p>
+            <p><h2>Oscar Cangui</h2></p>
+            <p>Tecnólogo Superior en Desarrollo de software</p>
+        </div>
+        <div class="container-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.340011154641!2d-78.61576079999999!3d-0.8871964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf959b7f8fa7a08c4!2zMMKwNTMnMTMuOSJTIDc4wrAzNic1Ni43Ilc!5e0!3m2!1ses-419!2sec!4v1667359856549!5m2!1ses-419!2sec" width="600" height="450" style="margin: 4% 7%; border: none; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+</div>
+
+<%- include('../templates/footer.ejs'); %>

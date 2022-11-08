@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-image: url(../img/header-wave.svg);
+    background-repeat: no-repeat;
+}
+
+/* Css de menu responsive */
+.header{
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    padding: 90px 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: #eaeaea;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 40px;
+    font-family: 'Inter';
+}
+
+.logo .logo-desc{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    font-family: 'Roboto';
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+    background-color: rgb(111, 194, 250);
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    color: #000;
+    background: none;
+    border: none;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Css section */
+section{
+    display: flex;
+    justify-content: space-between;    
+    margin: auto;
+    width: 95%;
+}
+
+
+
+.content-description{
+    width: 25%;
+    height: 10rem;
+    margin: auto 10px;
+    font-family: 'Inter';
+}
+
+.content-description h1{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.content-description p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.content-avatar{
+    width: 50%;
+}
+
+.content-avatar .img-avatar{
+    width: 100%;
+}
+
+main{
+    padding: 95px 60px;
+}
+
+/* Css main */
+main .section-title{
+    text-align: center;
+    color: #565360;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+/* css Cards */
+
+.card-presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card{
+    width: 22%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 9px 11px 17px -3px rgba(0,0,0,0.36);
+}
+
+.card .card-title{
+    background-color: #4762E6;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-title label{
+    color: #fff;
+    font-weight: 600;    
+}
+
+.card .card-img img{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.card .card-description{
+    height: 10vh;
+    margin: auto 8px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.card .card-description .fa-check{
+    color: #01bb1d;
+}
+
+.card .card-button{
+    margin: 10px auto;
+    width: 60%;
+}
+
+.card .btn-buy{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #fff;
+    background-color: #4762E6;
+    cursor: pointer;
+}
+
+.card .btn-buy:hover{
+    background-color: #2644d9;
+}
+
+/* Cards support */
+.card-content-support{
+    width: 20%;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 9px 11px 17px -3px rgba(0,0,0,0.36);
+}
+
+.card-support-title{
+    background-color: #002DB3;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.card-support-title label{
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #fff;
+}
+
+.card-support-img{
+    width: 38%;   
+    margin: 25px auto;
+}
+
+/* Section de product carrusel */
+
+.section-info{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.slide-container{
+    max-width: 100%;
+    margin-top: 15px;
+    height: 65vh;
+}
+
+.card-container-product{
+    width: 60%;
+    height: 57vh;
+    margin: 15px auto;
+    border-radius: 10px;
+    font-family: 'Inter';
+    box-shadow: 9px 11px 17px -3px #0000005c;
+}
+
+.img-product img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.name-product .equipo-desc{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.name-product .equipo-precio{
+    text-align: center;
+    margin: 10px auto;
+    opacity: .8;
+}
+
+.btn-shop{
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 25%;
+    cursor: pointer;
+    background-color: #0ad65f;
+    color: #363636;
+}
+
+.btn-shop:hover{
+    background-color: #0cc644;
+}
+
+.stars{
+    text-align: right;
+    margin: 0 10px 10px 0;
+}
+
+.stars label{
+    font-size: 12px;
+}
+
+.stars .fa-star{
+    color: #eed325;
+}
+
+/* Section Footer */
+.footer{
+    background-image: url(../img/footer-wave.svg);
+    height: 330px;
+    line-height: 30px;
+}
+
+.footer-info{
+    padding-top: 100px;
+    letter-spacing: 1px;
+}
+
+.footer-info .footer-title{
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-info .footer-description{
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer-list{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.footer-list .footer-list-link a{
+    color: #fff;
+
+}
+
+.social-container{
+    text-align: center;
+}
+
+.social-container img{
+    width: 3%;
+    margin: auto 25px;
+}
+
+@media (max-width:768px){
+
+    body{
+        background-image: url(../img/header-wave.svg);
+        background-size: 900px;
+    }
+    
+    .logo{ 
+        font-size: 20px;
+        font-weight: 600;
+        padding: 6px 20px;
+        font-family: 'Inter';
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        background-color: #63aaff;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover{
+        background: none;
+        color: rgb(5, 50, 133);
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+}
